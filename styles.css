@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+}
+
+body {
+    font-family: Roboto mono, sans-serif;
+    font-weight: 500;
+}
+
+.home {
+    height: 100vh;
+    background-image: url(/images/home-photo.jpg);
+    background-size: cover;
+    background-position: center;
+}
