@@ -16,4 +16,22 @@ body {
     background-image: url(/images/home-photo.jpg);
     background-size: cover;
     background-position: center;
+    color: #F7F7F7;
+}
+#nav {
+    display: flex;
+    padding: 3vh 10vh;
+    justify-content: space-between;
+}
+#nav-logo img {
+    line-height: 10vh;
+    vertical-align: middle;
+}
+#nav-bar, #nav-bar a {
+    line-height: 10vh;
+    vertical-align: middle;
+    font-size: 3.5vh;
+    text-align: right;
+    word-spacing: 10vh;
+    color: #F7F7F7;
 }
