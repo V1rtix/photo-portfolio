@@ -6,22 +6,21 @@
     border: none;
 }
 
-body {
+body, button {
     font-family: Roboto mono, sans-serif;
     font-weight: 500;
 }
-
-.home {
-    height: 100vh;
-    background-image: url(/images/home-photo.jpg);
-    background-size: cover;
-    background-position: center;
-    color: #F7F7F7;
-}
-#nav {
+/****** NAVBAR ******/
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
     display: flex;
-    padding: 3vh 10vh;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
 }
 #nav-logo img {
     line-height: 10vh;
@@ -30,8 +29,44 @@ body {
 #nav-bar, #nav-bar a {
     line-height: 10vh;
     vertical-align: middle;
-    font-size: 3.5vh;
+    font-size: 1.5rem;
     text-align: right;
     word-spacing: 10vh;
     color: #F7F7F7;
+}
+
+/****** HERO SECTION ******/
+.hero {
+    padding: 1rem 5rem ;
+    position: relative;
+    height: 80vh;
+    background-image: url(/images/home-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #F7F7F7;
+}
+
+#hero-content {
+    top: 50%;
+    translate: 0% -50%;
+    position: absolute;
+    display: block;
+}
+
+.hero-text {
+    margin-bottom: 1rem;
+
+}
+
+.hero-button {
+    width: 12rem;
+    height: 3rem;
+    border: 2px solid #F7F7F7;
+    background:rgba(0, 0, 0, 0);
+}
+.hero-button a {
+    color: #F7F7F7;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    font-family: inherit;
 }
