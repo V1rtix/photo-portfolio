@@ -9,35 +9,67 @@
 body, button {
     font-family: Roboto mono, sans-serif;
     font-weight: 500;
+    background-color: #0e0e0e;
+}
+.styled-button {
+    width: 12rem;
+    height: 3rem;
+    border: 2px solid #F7F7F7;
+    background:rgba(0, 0, 0, 0);
+    color: #F7F7F7;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+.styled-button:hover {
+    cursor: pointer;
+    background-color: #F7F7F7;
+    color: #0e0e0e;
 }
 /****** NAVBAR ******/
 nav {
+    height: 8vh;
     position: fixed;
     width: 100%;
     top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5rem;
-    background: rgba(0, 0, 0, 0.5);
+    padding: 0 3rem;
+    margin: 1.2rem 0;
     z-index: 10;
 }
 #nav-logo img {
     line-height: 10vh;
     vertical-align: middle;
+    width: 15vh;
 }
-#nav-bar, #nav-bar a {
-    line-height: 10vh;
+#nav-bar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: #F7F7F7 solid 1px;
+}
+#nav-bar-shape1 {
+    width: 5rem;
+    background-color: #F7F7F7;
+}
+#nav-bar button {
+    padding:  1rem 2rem;
+    background-color: rgba(0, 0, 0, 0);
     vertical-align: middle;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     text-align: right;
-    word-spacing: 10vh;
     color: #F7F7F7;
+}
+#nav-bar button:hover {
+    cursor: pointer;
+    color: #0e0e0e;
+    background-color: #F7F7F7;
 }
 
 /****** HERO SECTION ******/
-.hero {
-    padding: 1rem 5rem ;
+#hero {
+    padding: 0 5rem ;
     position: relative;
     height: 80vh;
     background-image: url(/images/home-photo.jpg);
@@ -53,20 +85,18 @@ nav {
     display: block;
 }
 
-.hero-text {
-    margin-bottom: 1rem;
-
+#hero h2 {
+    margin-bottom: 2rem;
 }
 
-.hero-button {
-    width: 12rem;
-    height: 3rem;
-    border: 2px solid #F7F7F7;
-    background:rgba(0, 0, 0, 0);
+/****** ABOUT ME SECTION ******/
+
+#about-me {
+    text-align: center;
+    margin: 7rem 5rem;
+    font-size: 2rem;
 }
-.hero-button a {
+#about-me p {
     color: #F7F7F7;
-    font-size: 1.2rem;
-    letter-spacing: 0.2rem;
-    font-family: inherit;
+    margin-bottom: 3rem;
 }
