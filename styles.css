@@ -28,15 +28,15 @@ body, button {
 /****** NAVBAR ******/
 nav {
     height: 8vh;
-    position: fixed;
+    position: sticky;
     width: 100%;
     top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 3rem;
-    margin: 1.2rem 0;
     z-index: 10;
+    background-color: #0e0e0e;
+    padding: 0 4rem;
 }
 #nav-logo img {
     line-height: 10vh;
@@ -48,11 +48,9 @@ nav {
     justify-content: flex-start;
     align-items: flex-start;
     border: #F7F7F7 solid 1px;
+    max-width: 1200px;
 }
-#nav-bar-shape1 {
-    width: 5rem;
-    background-color: #F7F7F7;
-}
+
 #nav-bar button {
     padding:  1rem 2rem;
     background-color: rgba(0, 0, 0, 0);
@@ -93,10 +91,45 @@ nav {
 
 #about-me {
     text-align: center;
-    margin: 7rem 5rem;
+    padding: 7rem 5rem;
     font-size: 2rem;
+    max-width: 120rem;
+    margin: auto;
 }
 #about-me p {
     color: #F7F7F7;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
+}
+
+/****** MY WORK SECTION ******/
+
+#my-work-section {
+    overflow: hidden;
+    position: relative;
+    height: 50rem;
+}
+#my-work-wrapper {
+    position: relative;
+    height: 50rem;
+    background-image: url(images/gallery/collage-dark.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #0e0e0e;
+}
+#my-work-content {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    position: absolute;
+}
+#my-work-content h1{
+    font-size: 5rem;
+    text-align: center;
+    background-size: auto;
+    transform: scale(1.5);
+}
+#my-work-content span {
+    background-color: #F7F7F7;
+    padding: 0 1rem 0 2rem;
 }
