@@ -12,12 +12,12 @@ body, button {
     background-color: #0e0e0e;
 }
 .styled-button {
-    width: 12rem;
-    height: 3rem;
+    width: 18rem;
+    height: 4rem;
     border: 2px solid #F7F7F7;
     background:rgba(0, 0, 0, 0);
     color: #F7F7F7;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     letter-spacing: 0.1rem;
 }
 .styled-button:hover {
@@ -25,18 +25,24 @@ body, button {
     background-color: #F7F7F7;
     color: #0e0e0e;
 }
+.icon {
+    color: #F7F7F7;
+    font-size: 48px;
+}
 /****** NAVBAR ******/
 nav {
     height: 8vh;
-    position: sticky;
+    position: fixed;
     width: 100%;
     top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 10;
-    background-color: #0e0e0e;
-    padding: 0 4rem;
+    padding: 1rem 4rem 0 4rem;
+    background: linear-gradient(
+        rgba(0,0,0,0.7) 40%,
+        rgba(0,0,0,0));
 }
 #nav-logo img {
     line-height: 10vh;
@@ -48,7 +54,7 @@ nav {
     justify-content: flex-start;
     align-items: flex-start;
     border: #F7F7F7 solid 1px;
-    max-width: 1200px;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 #nav-bar button {
@@ -74,11 +80,12 @@ nav {
     background-size: cover;
     background-position: center;
     color: #F7F7F7;
+    margin-top: 0;
 }
 
 #hero-content {
     top: 50%;
-    translate: 0% -50%;
+    transform: translateY(-50%);
     position: absolute;
     display: block;
 }
@@ -106,7 +113,13 @@ nav {
 #my-work-section {
     overflow: hidden;
     position: relative;
-    height: 50rem;
+    max-height: 50rem;
+    max-width: 1920px;
+    margin: auto;
+}
+#my-work-wrapper:hover {
+    transform: scale(1.1);
+    overflow: hidden;
 }
 #my-work-wrapper {
     position: relative;
@@ -115,6 +128,7 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     color: #0e0e0e;
+    transition: 2s;
 }
 #my-work-content {
     top: 50%;
